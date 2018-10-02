@@ -1,0 +1,4 @@
+[
+  "test_particle.py::TestParticle::testUpdateParticle",
+  "test_particle.py::TestParticle::testUpdatePersonalBest"
+]

@@ -1,4 +1,4 @@
 [
-  "test_particle.py::TestParticle::testUpdateParticle",
-  "test_particle.py::TestParticle::testUpdatePersonalBest"
+  "teste_swarm.py::TestSwarm::testInitSwarm",
+  "teste_swarm.py::TestSwarm::testUpdateSwarm"
 ]

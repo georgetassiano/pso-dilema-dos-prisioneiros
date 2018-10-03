@@ -4,9 +4,10 @@ import numpy as np
 class Swarm:
 
     def __init__(self, number_of_particles, function_optimization, inertial, ci, si):
+        self._number_of_particles = number_of_particles
         self._particles = self.initParticles(number_of_particles, function_optimization)
-        self._global_best_particle = self._particles[0].get_position()
-        self._global_best_value = self._particles[0].get_value()
+        self._global_best_particle = self._particles[0].get_personal_best_position()
+        self._global_best_value = self._particles[0].get_personal_best_value()
         self._function_optimization = function_optimization
         self._inertial = inertial
         self._ci = ci
@@ -20,6 +21,15 @@ class Swarm:
 
     def get_global_best_value(self):
         return self._global_best_value
+
+    def get_information(self):
+        best = self.get_particles()[0].get_personal_best_information()
+        avarage = np.zeros(2)
+        for i in self.get_particles():
+            avarage += i.get_personal_best_information()
+        avarage = avarage / self._number_of_particles
+        lowest = self.get_particles()[-1].get_personal_best_information()
+        return np.array([best, avarage, lowest])
 
     def initParticles(self, number_of_particles, function_optimization):
         particles = []
@@ -41,7 +51,7 @@ class Swarm:
             i.update_particle(self._global_best_particle, self._inertial, self._ci, self._si)
             i.set_value(self._function_optimization.calc_result(i.get_position(), array))
         self._particles = sorted(self._particles)
-        if self._particles[0].get_value() <= self._global_best_value:
-            self._global_best_particle = self._particles[0].get_position()
-            self._global_best_value = self._particles[0].get_value()
+        if self._particles[0].get_personal_best_value() <= self._global_best_value:
+            self._global_best_particle = self._particles[0].get_personal_best_position()
+            self._global_best_value = self._particles[0].get_personal_best_value()
 

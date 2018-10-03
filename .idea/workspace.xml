@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346650fc-6727-40b3-9ed3-c06a3aa0a8cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/teste_swarm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pso-dp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pso-dp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/pso/particle.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/pso/particle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/pso/pso-algorithm.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/pso/swarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/pso/swarm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/.pytest_cache/v/cache/lastfailed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/.pytest_cache/v/cache/nodeids" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/tests/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/tests/.pytest_cache/v/cache/nodeids" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_function_optimization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_function_optimization.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_particle.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_particle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/teste_swarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/teste_swarm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +20,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pso_dilema_dos_prisioneiros$pytest_in_test_particle_py.coverage" NAME="pytest in test_particle.py Coverage Results" MODIFIED="1538546174048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/pso_dilema_dos_prisioneiros$pytest_in_teste_swarm_py.coverage" NAME="pytest in teste_swarm.py Coverage Results" MODIFIED="1538548788049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/pso_dilema_dos_prisioneiros$pytest_in_test_particle_py.coverage" NAME="pytest in test_particle.py Coverage Results" MODIFIED="1538564275254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/pso_dilema_dos_prisioneiros$pytest_in_teste_swarm_py.coverage" NAME="pytest in teste_swarm.py Coverage Results" MODIFIED="1538567541045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/pso_dp$pytest_in_tests.coverage" NAME="pytest in tests Coverage Results" MODIFIED="1538494248486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/pso_dilema_dos_prisioneiros$pytest_in_test_function_optimization_py.coverage" NAME="pytest in test_function_optimization.py Coverage Results" MODIFIED="1538547192982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/pso_dilema_dos_prisioneiros$pytest_in_test_function_optimization_py.coverage" NAME="pytest in test_function_optimization.py Coverage Results" MODIFIED="1538563867779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/pso_dilema_dos_prisioneiros$pytest_in_tests.coverage" NAME="pytest in tests Coverage Results" MODIFIED="1538515083687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/pso_dilema_dos_prisioneiros$pytest_in_test_pso_algorithm_py.coverage" NAME="pytest in test_pso_algorithm.py Coverage Results" MODIFIED="1538578319016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1251379269">
@@ -66,71 +68,145 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="py" value="9154" />
+          <entry key="py" value="12417" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="9154" />
+          <entry key="Python" value="12417" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="152" />
+          <entry key="py" value="170" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="152" />
+          <entry key="Python" value="170" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="pso-dilema-dos-prisioneiros" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/pso/particle.py">
+        <entry file="file://$PROJECT_DIR$/models/pso/swarm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            <state relative-caret-position="-483">
+              <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+                <marker date="1538567161560" expanded="true" signature="637:646" ph="..." />
+                <marker date="1538567161560" expanded="true" signature="637:1240" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/pso/swarm.py">
+        <entry file="file://$PROJECT_DIR$/tests/teste_swarm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="43" column="69" lean-forward="true" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+            <state relative-caret-position="493">
+              <caret line="44" selection-start-line="44" selection-end-line="45" selection-end-column="19" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
-                <marker date="1538548578234" expanded="true" signature="553:562" ph="..." />
-                <marker date="1538548578234" expanded="true" signature="553:750" ph="..." />
+                <element signature="e#0#15#0" expanded="true" />
+                <marker date="1538567540912" expanded="true" signature="194:195" ph="..." />
+                <marker date="1538567540912" expanded="true" signature="194:200" ph="..." />
+                <marker date="1538567540912" expanded="true" signature="1022:1377" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/pso/pso_algorithm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/teste_swarm.py">
+        <entry file="file://$PROJECT_DIR$/tests/test_pso_algorithm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+            <state relative-caret-position="357">
+              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1538548806485" expanded="true" signature="194:195" ph="..." />
-                <marker date="1538548806485" expanded="true" signature="194:200" ph="..." />
-                <marker date="1538548806485" expanded="true" signature="968:1323" ph="..." />
+                <marker date="1538572882775" expanded="true" signature="273:1126" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/axis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="1678" selection-start-line="1678" selection-end-line="1678" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/axes/_base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="3207" selection-start-line="3207" selection-end-line="3207" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="1071" selection-start-line="1071" selection-end-line="1071" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/IPython/core/interactiveshell.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="2962" selection-start-line="2962" selection-end-line="2962" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="196" selection-start-line="196" selection-end-line="196" />
             </state>
           </provider>
         </entry>
@@ -141,6 +217,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
+        <option value="Python Unit Test" />
         <option value="Python Script" />
       </list>
     </option>
@@ -151,7 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/pso/pso-algorithm.py" />
         <option value="$PROJECT_DIR$/notebooks/apresentacao.ipynb" />
         <option value="$PROJECT_DIR$/models/functions_optimization/function_optimization_dp_bonus_base.py" />
         <option value="$PROJECT_DIR$/models/functions_optimization/function_optmization_dp_coletivo_base.py" />
@@ -159,8 +235,6 @@
         <option value="$PROJECT_DIR$/models/functions_optimization/function_optimization_dp_coletivo_base.py" />
         <option value="$PROJECT_DIR$/models/functions_optimization/function_optimization_dp_individual_base.py" />
         <option value="$PROJECT_DIR$/models/functions_optimization/function_optimization_base.py" />
-        <option value="$PROJECT_DIR$/tests/test_function_optimization.py" />
-        <option value="$PROJECT_DIR$/tests/test_particle.py" />
         <option value="$PROJECT_DIR$/models/functions_optimization/dp_individual_sem_bonus.py" />
         <option value="$PROJECT_DIR$/models/functions_optimization/dp_coletivo_10_com_bonus.py" />
         <option value="$PROJECT_DIR$/models/functions_optimization/dp_coletivo_10_sem_bonus.py" />
@@ -170,12 +244,18 @@
         <option value="$PROJECT_DIR$/models/functions_optimization/dp_coletivo_sem_bonus.py" />
         <option value="$PROJECT_DIR$/models/functions_optimization/dp_individual_10_com_bonus.py" />
         <option value="$PROJECT_DIR$/models/functions_optimization/dp_individual_10_sem_bonus.py" />
-        <option value="$PROJECT_DIR$/models/functions_optimization/dp_individual_30_com_bonus.py" />
         <option value="$PROJECT_DIR$/models/functions_optimization/dp_individual_30_sem_bonus.py" />
         <option value="$PROJECT_DIR$/models/functions_optimization/dp_individual_com_bonus.py" />
+        <option value="$PROJECT_DIR$/models/functions_optimization/dp_individual_30_com_bonus.py" />
+        <option value="$PROJECT_DIR$/tests/test_function_optimization.py" />
+        <option value="$PROJECT_DIR$/tests/test_particle.py" />
         <option value="$PROJECT_DIR$/models/pso/particle.py" />
         <option value="$PROJECT_DIR$/models/pso/swarm.py" />
         <option value="$PROJECT_DIR$/tests/teste_swarm.py" />
+        <option value="$PROJECT_DIR$/models/pso/pso-algorithm.py" />
+        <option value="$PROJECT_DIR$/tests/test_pso_algorithm.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/models/pso/pso_algorithm.py" />
       </list>
     </option>
   </component>
@@ -185,7 +265,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="100" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -197,7 +277,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,12 +293,6 @@
               <item name="pso-dilema-dos-prisioneiros" type="b2602c69:ProjectViewProjectNode" />
               <item name="pso-dilema-dos-prisioneiros" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="functions_optimization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pso-dilema-dos-prisioneiros" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pso-dilema-dos-prisioneiros" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="pso" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -231,11 +304,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -249,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in teste_swarm.py">
+  <component name="RunManager" selected="Python tests.pytest in test_pso_algorithm.py">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="pso-dp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,17 +347,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dp_individual_sem_bonus" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="particle" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pso-dp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models/functions_optimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models/pso" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/functions_optimization/dp_individual_sem_bonus.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/pso/particle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -295,11 +370,8 @@
       <module name="pso-dp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="SDK_HOME" value="C:\Users\georg\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -313,20 +385,23 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_function_optimization.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="swarm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pso-dp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models/pso" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_function_optimization.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/pso/swarm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_particle.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -342,6 +417,22 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_particle.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_pso_algorithm.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pso-dp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_pso_algorithm.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -361,37 +452,21 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pso-dp" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.pso-dp" />
-      <item itemvalue="Python tests.pytest in tests" />
+      <item itemvalue="Python.swarm" />
+      <item itemvalue="Python.particle" />
       <item itemvalue="Python tests.pytest in test_particle.py" />
-      <item itemvalue="Python.dp_individual_sem_bonus" />
-      <item itemvalue="Python tests.pytest in test_function_optimization.py" />
       <item itemvalue="Python tests.pytest in teste_swarm.py" />
+      <item itemvalue="Python tests.pytest in test_pso_algorithm.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_pso_algorithm.py" />
         <item itemvalue="Python tests.pytest in teste_swarm.py" />
-        <item itemvalue="Python tests.pytest in test_function_optimization.py" />
+        <item itemvalue="Python.particle" />
+        <item itemvalue="Python.swarm" />
         <item itemvalue="Python tests.pytest in test_particle.py" />
-        <item itemvalue="Python.dp_individual_sem_bonus" />
-        <item itemvalue="Python tests.pytest in tests" />
       </list>
     </recent_temporary>
   </component>
@@ -409,56 +484,65 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_teste_swarm_py - 2018.10.03 at 03h 37m 33s.xml">
-      <configuration name="pytest in teste_swarm.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_pso_algorithm_py - 2018.10.03 at 09h 39m 32s.xml">
+      <configuration name="pytest in test_pso_algorithm.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_teste_swarm_py - 2018.10.03 at 03h 37m 40s.xml">
-      <configuration name="pytest in teste_swarm.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_pso_algorithm_py - 2018.10.03 at 09h 40m 21s.xml">
+      <configuration name="pytest in test_pso_algorithm.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_teste_swarm_py - 2018.10.03 at 03h 38m 35s.xml">
-      <configuration name="pytest in teste_swarm.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_pso_algorithm_py - 2018.10.03 at 09h 41m 00s.xml">
+      <configuration name="pytest in test_pso_algorithm.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_teste_swarm_py - 2018.10.03 at 03h 38m 45s.xml">
-      <configuration name="pytest in teste_swarm.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_pso_algorithm_py - 2018.10.03 at 09h 41m 20s.xml">
+      <configuration name="pytest in test_pso_algorithm.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_teste_swarm_py - 2018.10.03 at 03h 39m 07s.xml">
-      <configuration name="pytest in teste_swarm.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_pso_algorithm_py - 2018.10.03 at 09h 42m 40s.xml">
+      <configuration name="pytest in test_pso_algorithm.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_teste_swarm_py - 2018.10.03 at 03h 39m 20s.xml">
-      <configuration name="pytest in teste_swarm.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_pso_algorithm_py - 2018.10.03 at 09h 43m 32s.xml">
+      <configuration name="pytest in test_pso_algorithm.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_teste_swarm_py - 2018.10.03 at 03h 39m 28s.xml">
-      <configuration name="pytest in teste_swarm.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_pso_algorithm_py - 2018.10.03 at 09h 46m 42s.xml">
+      <configuration name="pytest in test_pso_algorithm.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_teste_swarm_py - 2018.10.03 at 03h 39m 36s.xml">
-      <configuration name="pytest in teste_swarm.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_pso_algorithm_py - 2018.10.03 at 10h 21m 32s.xml">
+      <configuration name="pytest in test_pso_algorithm.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_teste_swarm_py - 2018.10.03 at 03h 39m 45s.xml">
-      <configuration name="pytest in teste_swarm.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_pso_algorithm_py - 2018.10.03 at 10h 23m 00s.xml">
+      <configuration name="pytest in test_pso_algorithm.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_teste_swarm_py - 2018.10.03 at 03h 39m 53s.xml">
-      <configuration name="pytest in teste_swarm.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_pso_algorithm_py - 2018.10.03 at 10h 23m 49s.xml">
+      <configuration name="pytest in test_pso_algorithm.py" configurationId="tests" />
     </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.2585288" />
+      <window_info id="Structure" order="1" sideWeight="0.50080776" side_tool="true" weight="0.2585288" />
+      <window_info id="Favorites" order="2" sideWeight="0.50080776" side_tool="true" weight="0.2585288" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286334" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286334" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -507,12 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/pso/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/notebooks/apresentacao.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -527,57 +605,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/pso/pso-algorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/functions_optimization/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/functions_optimization/function_optimization_dp_bonus_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="826" column="11" lean-forward="true" selection-start-line="826" selection-start-column="11" selection-end-line="826" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_particle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="41" selection-start-line="41" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1538543843381" expanded="true" signature="1007:1013" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_function_optimization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1538543436082" expanded="true" signature="1147:1148" ph="..." />
-            <marker date="1538543436082" expanded="true" signature="1147:1153" ph="..." />
-            <marker date="1538543436082" expanded="true" signature="2185:2194" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/functions_optimization/function_optimization_dp_bonus_base.py" />
     <entry file="file://$PROJECT_DIR$/models/functions_optimization/dp_coletivo_10_com_bonus.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -645,16 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/functions_optimization/dp_individual_30_com_bonus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/functions_optimization/dp_individual_30_sem_bonus.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -662,20 +683,6 @@
           <folding>
             <element signature="e#0#119#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/functions_optimization/function_optimization_dp_individual_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/functions_optimization/function_optimization_dp_coletivo_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -689,10 +696,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/functions_optimization/dp_individual_com_bonus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#119#0" expanded="true" />
+            <marker date="1538547192406" expanded="true" signature="206:212" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/functions_optimization/dp_individual_30_com_bonus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/functions_optimization/function_optimization_dp_individual_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/functions_optimization/function_optimization_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="61" lean-forward="true" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+        <state relative-caret-position="374">
+          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
             <marker date="1538543294711" expanded="true" signature="92:93" ph="..." />
@@ -701,6 +736,23 @@
             <marker date="1538543294711" expanded="true" signature="627:633" ph="..." />
             <marker date="1538543294711" expanded="true" signature="672:724" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-728">
+          <caret line="828" selection-start-line="828" selection-end-line="828" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/pso/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/pso/pso-algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -717,45 +769,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/functions_optimization/dp_individual_com_bonus.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_particle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        <state relative-caret-position="221">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding>
-            <element signature="e#0#119#0" expanded="true" />
-            <marker date="1538547192406" expanded="true" signature="206:212" ph="..." />
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1538563912778" expanded="true" signature="1006:1012" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/pso/particle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="357">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding>
+            <marker date="1538567161605" expanded="true" signature="531:613" ph="..." />
+            <marker date="1538567161605" expanded="true" signature="1515:1521" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_function_optimization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1538563858890" expanded="true" signature="1147:1148" ph="..." />
+            <marker date="1538563858890" expanded="true" signature="1147:1153" ph="..." />
+            <marker date="1538563858890" expanded="true" signature="2648:2657" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/functions_optimization/function_optimization_dp_coletivo_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/pso/swarm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="43" column="69" lean-forward="true" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+        <state relative-caret-position="-483">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
-            <marker date="1538548578234" expanded="true" signature="553:562" ph="..." />
-            <marker date="1538548578234" expanded="true" signature="553:750" ph="..." />
+            <marker date="1538567161560" expanded="true" signature="637:646" ph="..." />
+            <marker date="1538567161560" expanded="true" signature="637:1240" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/teste_swarm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+        <state relative-caret-position="493">
+          <caret line="44" selection-start-line="44" selection-end-line="45" selection-end-column="19" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1538548806485" expanded="true" signature="194:195" ph="..." />
-            <marker date="1538548806485" expanded="true" signature="194:200" ph="..." />
-            <marker date="1538548806485" expanded="true" signature="968:1323" ph="..." />
+            <marker date="1538567540912" expanded="true" signature="194:195" ph="..." />
+            <marker date="1538567540912" expanded="true" signature="194:200" ph="..." />
+            <marker date="1538567540912" expanded="true" signature="1022:1377" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/IPython/core/interactiveshell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="2962" selection-start-line="2962" selection-end-line="2962" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/axis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="1678" selection-start-line="1678" selection-end-line="1678" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/axes/_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="3207" selection-start-line="3207" selection-end-line="3207" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="1071" selection-start-line="1071" selection-end-line="1071" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/pso/pso_algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_pso_algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1538572882775" expanded="true" signature="273:1126" ph="..." />
           </folding>
         </state>
       </provider>

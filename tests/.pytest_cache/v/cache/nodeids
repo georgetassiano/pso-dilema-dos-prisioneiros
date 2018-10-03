@@ -1,4 +1,3 @@
 [
-  "teste_swarm.py::TestSwarm::testInitSwarm",
-  "teste_swarm.py::TestSwarm::testUpdateSwarm"
+  "test_pso_algorithm.py::TestPSOAlgorithm::test_exec_algorithm"
 ]

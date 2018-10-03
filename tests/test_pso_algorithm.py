@@ -1,10 +1,11 @@
 import unittest
 import numpy as np
+from models.pso.pso_algorithm import PSOAlgorithm
 from models.pso.swarm import Swarm
 from models.functions_optimization.dp_individual_sem_bonus import DPIndividualSemBonus
 
 
-class TestSwarm(unittest.TestCase):
+class TestPSOAlgorithm(unittest.TestCase):
 
     def setUp(self):
         self.particles_length = 50
@@ -24,22 +25,14 @@ class TestSwarm(unittest.TestCase):
         self.si = 1.0
         self.function = DPIndividualSemBonus(self.lower_limit, self.upper_limit, self.count_parms, self.global_comparison_length)
         self.swarm = Swarm(self.particles_length, self.function, self.inertial, self.ci, self.si)
+        self.algorithm = PSOAlgorithm(self.swarm, self.function, 1000)
 
-    def testInitSwarm(self):
-        self.assertGreaterEqual(self.swarm.get_particles()[-1].get_value(), self.swarm.get_particles()[0].get_value())
-        self.assertEquals(self.swarm.get_particles()[0].get_value(), self.swarm.get_global_best_value())
-        self.assertTrue(np.array_equal(self.swarm.get_particles()[0].get_position(), self.swarm.get_global_best_particle()))
-
-    def testUpdateSwarm(self):
-        global_best_value = self.swarm.get_global_best_value()
-        self.swarm.updateSwarm()
-        self.assertGreaterEqual(global_best_value, self.swarm.get_global_best_value())
-
-    def testInformationSwarm(self):
-        information = self.swarm.get_information()
-        self.assertEqual(information[0].sum(), 30)
-        self.assertAlmostEqual(information[1].sum(), 30.0)
-        self.assertEqual(information[2].sum(), 30)
+    def test_exec_algorithm(self):
+        self.algorithm.exec_algorithm()
+        result = self.algorithm.get_result()
+        self.assertEqual(1000, np.size(result, 0))
+        self.assertEqual(3, np.size(result, 1))
+        self.assertEqual(2, np.size(result, 2))
 
 
 if __name__ == '__main__':

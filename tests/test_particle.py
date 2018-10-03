@@ -9,7 +9,7 @@ class TestParticle(unittest.TestCase):
     def setUp(self):
         self.particle = Particle(0.0, 1.0, 30)
 
-    def test_update_personal_best_to_Mminimum_global(self):
+    def test_update_personal_best_to_minimum_global(self):
         """ verifica se a melhor posição da particula é alterada quando a posição atual é melhor """
         best = 0.0
         personal_best_position = self.particle.get_personal_best_position()

@@ -1,21 +1,32 @@
 from models.pso.pso_algorithm import PSOAlgorithm
 from models.pso.swarm import Swarm
 from models.functions_optimization.dp_individual_sem_bonus import DPIndividualSemBonus
+from models.functions_optimization.dp_individual_com_bonus import DPIndividualComBonus
+from models.functions_optimization.dp_individual_10_sem_bonus import DPIndividual10SemBonus
+from models.functions_optimization.dp_individual_10_com_bonus import DPIndividual10ComBonus
+from models.functions_optimization.dp_individual_30_sem_bonus import DPIndividual30SemBonus
+from models.functions_optimization.dp_individual_30_com_bonus import DPIndividual30ComBonus
+from models.functions_optimization.dp_coletivo_sem_bonus import DPColetivoSemBonus
+from models.functions_optimization.dp_coletivo_com_bonus import DPColetivoComBonus
+from models.functions_optimization.dp_coletivo_10_sem_bonus import DPColetivo10SemBonus
+from models.functions_optimization.dp_coletivo_10_com_bonus import DPColetivo10ComBonus
+from models.functions_optimization.dp_coletivo_30_sem_bonus import DPColetivo30SemBonus
+from models.functions_optimization.dp_coletivo_30_com_bonus import DPColetivo30ComBonus
 import matplotlib.pyplot as plt
 import numpy as np
 
-particles_length = 50
 count_parms = 30
-valueIndividual = 1.2 * count_parms
-valueColetivo = 0 * count_parms
-valueBonus = (count_parms // 3) * -0.5
-array = np.zeros(count_parms)
-list = np.zeros([50, count_parms])
-c = 3
-bonus = -0.5
 global_comparison_length = 1
+global_comparison_length_10 = 5
+global_comparison_length_30 = 15
+particles_length = 50
 lower_limit = 0.0
 upper_limit = 1.0
+max_interation=1000
+max_execution=5
+
+c = 3.0
+bonus = -0.5
 inertial = 1.0
 ci = 1.0
 si = 1.0
@@ -23,7 +34,7 @@ si = 1.0
 if __name__ == '__main__':
     function1 = DPIndividualSemBonus(lower_limit, upper_limit, count_parms, global_comparison_length)
     swarm = Swarm(particles_length, function1, inertial, ci, si)
-    algorithm = PSOAlgorithm(swarm, function1, 1000)
+    algorithm = PSOAlgorithm(swarm, function1, max_interation, max_execution)
     algorithm.exec_algorithm()
     result = algorithm.get_result()
     plotarBest = np.zeros([np.size(result, 0)])

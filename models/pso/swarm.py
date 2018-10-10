@@ -23,12 +23,12 @@ class Swarm:
         return self._global_best_value
 
     def get_information(self):
-        best = self.get_particles()[0].get_personal_best_information()
+        best = self.get_particles()[0].get_position_information()
         avarage = np.zeros(2)
         for i in self.get_particles():
-            avarage += i.get_personal_best_information()
+            avarage += i.get_position_information()
         avarage = avarage / self._number_of_particles
-        lowest = self.get_particles()[-1].get_personal_best_information()
+        lowest = self.get_particles()[-1].get_position_information()
         return np.array([best, avarage, lowest])
 
     def initParticles(self, number_of_particles, function_optimization):

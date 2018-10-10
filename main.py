@@ -1,17 +1,7 @@
 from models.pso.pso_algorithm import PSOAlgorithm
 from models.pso.swarm import Swarm
-from models.functions_optimization.dp_individual_sem_bonus import DPIndividualSemBonus
-from models.functions_optimization.dp_individual_com_bonus import DPIndividualComBonus
-from models.functions_optimization.dp_individual_10_sem_bonus import DPIndividual10SemBonus
-from models.functions_optimization.dp_individual_10_com_bonus import DPIndividual10ComBonus
-from models.functions_optimization.dp_individual_30_sem_bonus import DPIndividual30SemBonus
-from models.functions_optimization.dp_individual_30_com_bonus import DPIndividual30ComBonus
-from models.functions_optimization.dp_coletivo_sem_bonus import DPColetivoSemBonus
-from models.functions_optimization.dp_coletivo_com_bonus import DPColetivoComBonus
-from models.functions_optimization.dp_coletivo_10_sem_bonus import DPColetivo10SemBonus
-from models.functions_optimization.dp_coletivo_10_com_bonus import DPColetivo10ComBonus
-from models.functions_optimization.dp_coletivo_30_sem_bonus import DPColetivo30SemBonus
-from models.functions_optimization.dp_coletivo_30_com_bonus import DPColetivo30ComBonus
+from models.functions_optimization.function_optimization_dp_individual_base import FunctionOptimizationDPIndividualBase as DPIndividual
+from models.functions_optimization.function_optimization_dp_coletivo_base import FunctionOptimizationDPColetivoBase as DPColetivo
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -32,7 +22,7 @@ ci = 1.0
 si = 1.0
 
 if __name__ == '__main__':
-    function1 = DPIndividualSemBonus(lower_limit, upper_limit, count_parms, global_comparison_length)
+    function1 = DPIndividual(lower_limit, upper_limit, count_parms)
     swarm = Swarm(particles_length, function1, inertial, ci, si)
     algorithm = PSOAlgorithm(swarm, function1, max_interation, max_execution)
     algorithm.exec_algorithm()

@@ -13,10 +13,10 @@ class Particle:
         self._personal_best_value = np.inf
 
     def __eq__(self, other):
-        return self._personal_best_value == other.get_personal_best_value()
+        return self._value == other.get_value()
 
     def __lt__(self, other):
-        return self._personal_best_value < other.get_personal_best_value()
+        return self._value < other.get_value()
 
     def get_position(self):
         return self._position
@@ -42,6 +42,9 @@ class Particle:
 
     def get_personal_best_information(self):
         return np.array([(self._personal_best_position < 0.5).sum(), (self._personal_best_position >= 0.5).sum()])
+
+    def get_position_information(self):
+        return np.array([(self._position < 0.5).sum(), (self._position >= 0.5).sum()])
 
     def update_personal_best(self):
         """ se a posição atual for melhor que a melhor posição da particula, então deve receber a nova posição """

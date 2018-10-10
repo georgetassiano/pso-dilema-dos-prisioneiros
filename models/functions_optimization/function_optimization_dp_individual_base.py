@@ -4,8 +4,8 @@ import numpy as np
 
 class FunctionOptimizationDPIndividualBase(FunctionOptimizationBase):
 
-    def __init__(self, min_limit, max_limit, count_params,  global_comparison_length=1, bonus=0, c=1):
-        super().__init__(min_limit, max_limit, count_params,  global_comparison_length != 1, global_comparison_length)
+    def __init__(self, min_limit, max_limit, global_comparison_length=1, bonus=0, c=1):
+        super().__init__(min_limit, max_limit, global_comparison_length != 1, global_comparison_length)
         self._c = c
         self._bonus = bonus
 

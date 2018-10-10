@@ -5,21 +5,21 @@ from models.functions_optimization.function_optimization_dp_coletivo_base import
 import matplotlib.pyplot as plt
 import numpy as np
 
-count_parms = 30
-global_comparison_length = 1
-global_comparison_length_10 = 5
-global_comparison_length_30 = 15
-particles_length = 50
-lower_limit = 0.0
-upper_limit = 1.0
-max_interation=1000
-max_execution=5
+count_parms = 30  # tamanho da representacao das particulas
+particles_length = 50  # quantidade de particulas
+global_comparison_length = 1  # quantidade de particulas para comparar
+global_comparison_length_10 = round(particles_length * 0.1)  # quantidade de particulas para comparar (10%)
+global_comparison_length_30 = round(particles_length * 0.3)  # quantidade de particulas para comprar (30%)
+lower_limit = 0.0  # limite inferior da função
+upper_limit = 1.0  # limite superior da função
+max_interation = 1000  # máximo de interações
+max_execution = 5  # máximo de execuções
 
-c = 3.0
-bonus = -0.5
-inertial = 1.0
-ci = 1.0
-si = 1.0
+c = 3.0  # quantidade de posições cooperativas para aplicação de 1 bonus
+bonus = -0.5  # bonus a ser dado por cada bonus a ser dado
+inertial = np.float_(1.2)  # valor da variável de inércia
+ci = np.float_(1.0)  # valor da constante da relevância da informação pessoal
+si = np.float_(1.0)  # valor da constante de relevância da informações social
 
 if __name__ == '__main__':
     function1 = DPIndividual(lower_limit, upper_limit, count_parms)

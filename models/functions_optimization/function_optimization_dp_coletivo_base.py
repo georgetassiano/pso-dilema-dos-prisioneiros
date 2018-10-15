@@ -1,12 +1,7 @@
-from models.functions_optimization.function_optimization_base import FunctionOptimizationBase
+from models.functions_optimization.function_optimization_dp_base import FunctionOptimizationDPBase
 import numpy as np
 
-class FunctionOptimizationDPColetivoBase(FunctionOptimizationBase):
-
-    def __init__(self, min_limit, max_limit, global_comparison_length=1, bonus=0, c=1):
-        super().__init__(min_limit, max_limit, global_comparison_length != 1, global_comparison_length)
-        self._c = c
-        self._bonus = bonus
+class FunctionOptimizationDPColetivoBase(FunctionOptimizationDPBase):
 
     def get_value(self, x, y):
         """ função objetivo """
@@ -21,20 +16,6 @@ class FunctionOptimizationDPColetivoBase(FunctionOptimizationBase):
             else:
                 return 0.0
 
-    def get_bonus(self, array):
-        cop = 0
-        count = 0
-        for e in array:
-            if e < 0.5:
-                count += 1
-                if count == self._c:
-                    cop += 1
-                    count = 0
-            else:
-                count = 0
-
-        return cop * self._bonus
-
     def calc_result(self, array, list_arrays = np.array([])):
         """ calcula o resultado da função comparando o array com um outro array aleatório """
         super().calc_result(array, list_arrays)
@@ -44,3 +25,5 @@ class FunctionOptimizationDPColetivoBase(FunctionOptimizationBase):
             for p in range(list_arrays[element].size):
                 value += self.get_value(array[p], list_arrays[element][p])
         return (value / self.get_global_comparison_length()) + self.get_bonus(array)
+
+

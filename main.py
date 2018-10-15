@@ -15,17 +15,17 @@ upper_limit = 1.0  # limite superior da função
 max_interation = 1000  # máximo de interações
 max_execution = 5  # máximo de execuções
 
-c = 3.0  # quantidade de posições cooperativas para aplicação de 1 bonus
+c = 1  # quantidade de posições cooperativas para aplicação de 1 bonus
 bonus = -0.5  # bonus a ser dado por cada bonus a ser dado
-inertial = np.float_(1.2)  # valor da variável de inércia
+inertial_ini = np.float_(1.2)  # valor da variável de inércia
+inertial_final = np.float_(0.8)  # valor da variável de inércia
 ci = np.float_(1.0)  # valor da constante da relevância da informação pessoal
 si = np.float_(1.0)  # valor da constante de relevância da informações social
 
 if __name__ == '__main__':
     function1 = DPIndividual(lower_limit, upper_limit, count_parms)
-    swarm = Swarm(particles_length, function1, inertial, ci, si)
-    algorithm = PSOAlgorithm(swarm, function1, max_interation, max_execution)
-    algorithm.exec_algorithm()
+    algorithm = PSOAlgorithm(function1, max_interation, max_execution)
+    algorithm.exec_algorithm(particles_length, function1, inertial_ini, inertial_final, ci, si, count_parms)
     result = algorithm.get_result()
     plotarBest = np.zeros([np.size(result, 0)])
     plotarAvarege = np.zeros([np.size(result, 0)])

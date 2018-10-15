@@ -23,11 +23,10 @@ class TestPSOAlgorithm(unittest.TestCase):
         self.ci = 1.0
         self.si = 1.0
         self.function = DPIndividual(self.lower_limit, self.upper_limit)
-        self.swarm = Swarm(self.particles_length, self.function, self.inertial_ini, self.inertial_final, self.ci, self.si, self.count_parms)
-        self.algorithm = PSOAlgorithm(self.swarm, self.function, 1000, 5)
+        self.algorithm = PSOAlgorithm(self.function, 1000, 5)
 
     def test_exec_algorithm(self):
-        self.algorithm.exec_algorithm()
+        self.algorithm.exec_algorithm(self.particles_length, self.function, self.inertial_ini, self.inertial_final, self.ci, self.si)
         result = self.algorithm.get_result()
         self.assertEqual(1000, np.size(result, 0))
         self.assertEqual(3, np.size(result, 1))

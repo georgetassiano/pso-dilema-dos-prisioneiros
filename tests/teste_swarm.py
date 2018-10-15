@@ -25,7 +25,7 @@ class TestSwarm(unittest.TestCase):
         self.iteracao_t = 0
         self.iteracao_final = 1
         self.function = DPIndividual(self.lower_limit, self.upper_limit)
-        self.swarm = Swarm(self.particles_length, self.function, self.inertial_ini, self.inertial_final, self.ci, self.si, self.count_parms)
+        self.swarm = Swarm(self.particles_length, self.function, self.inertial_ini, self.inertial_final, self.ci, self.si)
 
     def testInitSwarm(self):
         self.assertGreaterEqual(self.swarm.get_particles()[-1].get_value(), self.swarm.get_particles()[0].get_value())

@@ -20,6 +20,11 @@ class TestFunctionOptimization(unittest.TestCase):
         self.lower_limit = 0.0
         self.upper_limit = 1.0
 
+    def test_calc_result_exception(self):
+        function_optimization = DPIndividual(self.lower_limit, self.upper_limit)
+        with self.assertRaises(ValueError):
+            result = function_optimization.calc_result(self.array)
+
     def test_calc_result_individual_sem_bonus_and_result_is_constant(self):
         function_optimization = DPIndividual(self.lower_limit, self.upper_limit)
         result = function_optimization.calc_result(self.array, self.list)

@@ -3,7 +3,7 @@ import numpy as np
 from models.pso.pso_algorithm import PSOAlgorithm
 from models.pso.swarm import Swarm
 from models.functions_optimization.function_optimization_dp_individual_base import FunctionOptimizationDPIndividualBase as DPIndividual
-
+import matplotlib.pyplot as plt
 
 class TestPSOAlgorithm(unittest.TestCase):
 
@@ -28,12 +28,22 @@ class TestPSOAlgorithm(unittest.TestCase):
     def test_exec_algorithm(self):
         self.algorithm.exec_algorithm(self.particles_length, self.function, self.inertial_ini, self.inertial_final, self.ci, self.si)
         result = self.algorithm.get_result()
-        self.assertEqual(1000, np.size(result, 0))
-        self.assertEqual(3, np.size(result, 1))
-        self.assertEqual(2, np.size(result, 2))
-        print(self.algorithm.get_entropia())
-        self.assertEqual(5, len(self.algorithm.get_entropia()))
+        result_positions = self.algorithm.get_result_positions()
 
+        best, err_best = self.algorithm.get_best()
+        avarage, err_avarage = self.algorithm.get_avarage()
+        lowest, err_lowest = self.algorithm.get_lowest()
+        entropy = self.algorithm.get_entropy()
+
+        self.assertEqual(5, np.size(result, 0))
+        self.assertEqual(1000, np.size(result, 1))
+        self.assertEqual(3, np.size(result, 2))
+        self.assertEqual(2, np.size(result, 3))
+
+        self.assertEqual(5, np.size(result_positions, 0))
+        self.assertEqual(1000, np.size(result_positions, 1))
+        self.assertEqual(50, np.size(result_positions, 2))
+        self.assertEqual(30, np.size(result_positions, 3))
 
 if __name__ == '__main__':
     unittest.main()

@@ -36,6 +36,12 @@ class Swarm:
         lowest = self.get_particles()[-1].get_position_information()
         return np.array([best, avarage, lowest])
 
+    def get_positions(self):
+        array = []
+        for i in self._particles:  # recupera o array da população
+            array.append(i.get_position())
+        return array
+
     def initParticles(self, number_of_particles, function_optimization):
         """ inicia as particulas da população """
         particles = []

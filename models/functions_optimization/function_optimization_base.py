@@ -25,7 +25,7 @@ class FunctionOptimizationBase(ABC):
             raise ValueError("list of arrays is required")  # verifica se a função objetivo é calculada em relação a comparação da população e então verifica se o array da população foi passado
 
     @abstractmethod
-    def generate_array(self, particle_length):
+    def generate_array(self):
         """ definição da criação da posição das particulas"""
         pass
 
